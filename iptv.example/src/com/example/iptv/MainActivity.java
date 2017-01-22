@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.iptv;
+package com.futurereadymedia.iptv;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -40,7 +40,7 @@ public class MainActivity
             intent.setData(Uri.parse(playlistUrl));
             
             // If "package" extra is set, IPTV Core will be able to show your app name as a title
-            intent.putExtra("IPTV Master", getPackageName());
+            intent.putExtra("package", getPackageName());
             
             // EPG URL can be set either by "url-tvg" parameter in your playlist or by the following extra (supported since IPTV Core 3.3)
             // intent.putExtra("url-tvg", "<EPG URL>");

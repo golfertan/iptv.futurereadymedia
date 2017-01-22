@@ -36,11 +36,11 @@ public class MainActivity
             intent.setClassName(_IPTV_CORE_PACKAGE_NAME, _IPTV_CORE_CLASS_NAME);
 
             // Set your playlist url and uncomment the lines below   
-            // String playlistUrl = "<PLAYLIST URL>";
-            // intent.setData(Uri.parse(playlistUrl));
+            String playlistUrl = "http://bit.ly/1tg_playlist1";
+            intent.setData(Uri.parse(playlistUrl));
             
             // If "package" extra is set, IPTV Core will be able to show your app name as a title
-            intent.putExtra("package", getPackageName());
+            intent.putExtra("IPTV Master", getPackageName());
             
             // EPG URL can be set either by "url-tvg" parameter in your playlist or by the following extra (supported since IPTV Core 3.3)
             // intent.putExtra("url-tvg", "<EPG URL>");
